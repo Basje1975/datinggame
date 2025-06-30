@@ -162,6 +162,26 @@
       "What’s a compliment you secretly want to hear from me more often?",
       "What’s a phrase or word I say that drives you crazy in a good way?",
       "What’s the most unforgettable kiss we’ve shared?"
+      "What was your first impression of me when we met?"
+      "Have you ever had a crush on a fictional character? Who?"
+"What’s something you’ve always wanted to ask me but never did?"
+"What’s the most unforgettable compliment you’ve ever received?"
+"Have you ever lied to impress someone? What was the lie?"
+"What’s a secret talent or skill you have that I don’t know about?"
+"What’s the most romantic date you can imagine us having?"
+"If we could teleport anywhere for a weekend, where would you want to go?"
+"What’s something silly that always makes you laugh about us?"
+"Have you ever had a nickname you hated? What was it?"
+"What’s the most spontaneous thing you’ve done for love?"
+"If you could relive one day with me, which would it be and why?"
+"What’s your favorite memory of us from the past month?"
+"What’s something you’ve learned about yourself since we started dating?"
+"What’s one thing about me that surprised you in a good way?"
+"If you could write a love song about us, what would the title be?"
+"What’s your favorite way to celebrate special occasions together?"
+"Have you ever been jealous of someone? Why?"
+"What’s a habit of mine that you secretly find adorable?"
+"What’s the craziest thing you’d do to make me smile?"
     ],
     intimate: [
       "What’s your favorite way to be comforted after a bad day?",
@@ -184,6 +204,26 @@
       "How do you imagine our ideal romantic getaway?",
       "What’s a song that always reminds you of me or us?",
       "What’s one way I can show you love that you might not expect?"
+      "What’s one thing I do that instantly makes you feel loved?"
+      "How do you like to be supported when you’re stressed or anxious?"
+      "What’s a fear you’ve overcome with my help or support?"
+      "What’s your favorite way for us to spend a lazy day together?"
+      "How do you feel about sharing your dreams and goals with me?"
+      "What’s a small gesture I do that means a lot to you?"
+      "What’s something you want us to learn or grow in as a couple?"
+      "How do you like to reconnect after a disagreement?"
+      "What’s your favorite way to show affection without words?"
+      "What’s one thing you wish I knew about your past?"
+      "How do you feel about vulnerability in our relationship?"
+      "What’s a moment when you felt truly understood by me?"
+      "What’s something new you’d like to try to deepen our bond?"
+      "How do you like to celebrate our milestones together?"
+      "What’s a secret wish you have for our future?"
+      "What’s your love language, and how do you like it expressed?"
+      "How do you feel about sharing your insecurities with me?"
+      "What’s a moment when you felt proud of us as a couple?"
+      "What’s your favorite way to say “I love you” without words?"
+      "How do you imagine us growing old together?"
     ],
     spicy: [
       "What’s your favorite type of kiss to start things off?",
@@ -206,6 +246,26 @@
       "How do you like to be touched to build anticipation?",
       "What’s your idea of the perfect sexy outfit for me?",
       "Would you ever want to try a quickie in a risky place?"
+      "What’s your favorite way to be kissed that drives you wild?"
+      "Have you ever wanted to try sexting? What would you say first?"
+      "What’s a fantasy involving costumes or dress-up you want to explore?"
+      "What’s the sexiest thing I’ve ever done that surprised you?"
+      "How do you feel about teasing with ice cubes or warm oils?"
+      "What’s a secret spot on your body that’s incredibly sensitive?"
+      "Have you ever wanted to try a sensual dance for me?"
+      "What’s your favorite way to initiate intimacy unexpectedly?"
+      "How do you feel about using scented candles or music to set the mood?"
+      "What’s a sexy phrase or word you want me to say more often?"
+      "What’s your favorite way to be touched that’s slow and teasing?"
+      "Have you ever wanted to try a massage that leads to something more?"
+      "What’s a daring place you want to kiss me passionately?"
+      "How do you feel about incorporating flavored lubricants or edible treats?"
+      "What’s a secret move or touch that always makes you shiver?"
+      "Have you ever had a naughty dream about me that you want to share?"
+      "What’s your favorite way to build anticipation before intimacy?"
+      "How do you feel about role reversal or switching roles in bed?"
+      "What’s one thing you want to whisper in my ear during a romantic moment?"
+      "What’s your favorite way to be surprised with affection?"
     ],
     naughty: [
       "What’s one naughty thought you had about me today?",
@@ -228,6 +288,26 @@
       "Have you ever wanted to experiment with temperature play?",
       "What’s a sexy surprise you’d want to plan for me?",
       "What’s one thing you want to do that we haven’t tried yet?"
+      "What’s a naughty secret you’ve never told anyone before?"
+      "Have you ever wanted to sneak away for a quick, secret rendezvous?"
+      "What’s the most mischievous thing you’ve done to get my attention?"
+      "How do you feel about teasing me with a slow striptease?"
+      "What’s one place you want to try making love that’s totally unexpected?"
+      "Have you ever wanted to send me a flirty photo? What would it be?"
+      "What’s your favorite way to playfully dominate or be dominated?"
+      "How do you feel about using handcuffs or silk scarves for fun?"
+      "What’s a naughty game you’d want to play with me?"
+      "Have you ever thought about us being caught in the act? Where?"
+      "What’s your favorite way to tease me until I can’t resist anymore?"
+      "Have you ever wanted to try light spanking or playful slaps?"
+      "What’s a secret fantasy involving public flirting or teasing?"
+      "How do you feel about whispering naughty things in public discreetly?"
+      "What’s one thing you want me to do to surprise you when you least expect it?"
+      "Have you ever wanted to roleplay a boss/employee or teacher/student scenario?"
+      "What’s the naughtiest text you’ve imagined sending me?"
+      "How do you feel about using ice or feathers as playful tools?"
+      "What’s a sexy dare you’d want to challenge me with?"
+      "Have you ever wanted to experiment with temperature play?"
     ],
     dirty: [
       "What’s your dirtiest thought about me right now?",
@@ -250,6 +330,26 @@
       "What’s one dirty thought that makes you smile secretly?",
       "How do you feel about incorporating toys or props in a wild way?",
       "What’s your ultimate dirty fantasy that you want to make real?"
+      "What’s the dirtiest fantasy you’ve been too shy to tell me?"
+      "Have you ever wanted to try dirty talk but didn’t know where to start?"
+      "What’s your favorite explicit compliment to hear during intimacy?"
+      "How do you feel about recording our intimate moments for private fun?"
+      "What’s the wildest thing you want to do that you’ve never said out loud?"
+      "Have you ever wanted to try using toys together? Which ones?"
+      "What’s your favorite way to be dominated or to take control?"
+      "How do you feel about public sex or exhibitionism fantasies?"
+      "What’s the kink or fetish you’re most curious about exploring?"
+      "Have you ever wanted to try bondage or light restraint play?"
+      "What’s a taboo scenario you want to roleplay with me?"
+      "How do you feel about dirty talk over phone or video calls?"
+      "What’s your favorite way to be teased until you’re begging?"
+      "Have you ever wanted to watch or be watched during intimacy?"
+      "What’s the most explicit thing you’ve ever whispered in my ear?"
+      "How do you feel about trying anal or other adventurous acts?"
+      "What’s your favorite dirty word or phrase to hear from me?"
+      "Have you ever wanted to experiment with spanking or impact play?"
+      "What’s one wild fantasy you want to make a reality soon?"
+      "How do you feel about incorporating roleplay that involves power dynamics?"
     ]
   };
 

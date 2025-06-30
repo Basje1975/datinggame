@@ -135,9 +135,6 @@
     <button id="random-btn">Random Question</button>
   </div>
 </main>
-<footer>
-  Developed by Your Spicy Question Bot
-</footer>
 
 <script>
   const questions = {
@@ -164,24 +161,24 @@
       "What’s the most unforgettable kiss we’ve shared?"
       "What was your first impression of me when we met?"
       "Have you ever had a crush on a fictional character? Who?"
-"What’s something you’ve always wanted to ask me but never did?"
-"What’s the most unforgettable compliment you’ve ever received?"
-"Have you ever lied to impress someone? What was the lie?"
-"What’s a secret talent or skill you have that I don’t know about?"
-"What’s the most romantic date you can imagine us having?"
-"If we could teleport anywhere for a weekend, where would you want to go?"
-"What’s something silly that always makes you laugh about us?"
-"Have you ever had a nickname you hated? What was it?"
-"What’s the most spontaneous thing you’ve done for love?"
-"If you could relive one day with me, which would it be and why?"
-"What’s your favorite memory of us from the past month?"
-"What’s something you’ve learned about yourself since we started dating?"
-"What’s one thing about me that surprised you in a good way?"
-"If you could write a love song about us, what would the title be?"
-"What’s your favorite way to celebrate special occasions together?"
-"Have you ever been jealous of someone? Why?"
-"What’s a habit of mine that you secretly find adorable?"
-"What’s the craziest thing you’d do to make me smile?"
+      "What’s something you’ve always wanted to ask me but never did?"
+      "What’s the most unforgettable compliment you’ve ever received?"
+      "Have you ever lied to impress someone? What was the lie?"
+      "What’s a secret talent or skill you have that I don’t know about?"
+      "What’s the most romantic date you can imagine us having?"
+      "If we could teleport anywhere for a weekend, where would you want to go?"
+      "What’s something silly that always makes you laugh about us?"
+      "Have you ever had a nickname you hated? What was it?"
+      "What’s the most spontaneous thing you’ve done for love?"
+      "If you could relive one day with me, which would it be and why?"
+      "What’s your favorite memory of us from the past month?"
+      "What’s something you’ve learned about yourself since we started dating?"
+      "What’s one thing about me that surprised you in a good way?"
+      "If you could write a love song about us, what would the title be?"
+      "What’s your favorite way to celebrate special occasions together?"
+      "Have you ever been jealous of someone? Why?"
+      "What’s a habit of mine that you secretly find adorable?"
+      "What’s the craziest thing you’d do to make me smile?"
     ],
     intimate: [
       "What’s your favorite way to be comforted after a bad day?",

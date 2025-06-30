@@ -1,1 +1,316 @@
-# datinggame
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spicy Couples Question Game</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e2f;
+    color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  header {
+    background: #ff3c78;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 10px rgba(255, 60, 120, 0.5);
+  }
+  main {
+    flex: 1;
+    max-width: 600px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .category-buttons {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  button.category-btn, #random-btn {
+    background-color: #ff3c78;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.3rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    min-width: 110px;
+    max-width: 150px;
+  }
+  button.category-btn:hover,
+  button.category-btn.active,
+  #random-btn:hover {
+    background-color: #ff1a55;
+  }
+  #question-box {
+    background: #2a2a40;
+    border-radius: 15px;
+    padding: 2rem;
+    font-size: 1.3rem;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 10px #ff3c78aa;
+    margin-bottom: 2rem;
+  }
+  #next-btn {
+    background-color: #ff3c78;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #ff3c78bb;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  #next-btn:hover {
+    background-color: #ff1a55;
+  }
+  #random-btn {
+    box-shadow: 0 4px 12px #ff3c78bb;
+    margin-left: 10px;
+  }
+  .buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  @media (max-width: 460px) {
+    main {
+      padding: 1rem;
+    }
+    .category-buttons {
+      flex-direction: column;
+      gap: 8px;
+    }
+    .buttons-row {
+      flex-direction: column;
+      gap: 8px;
+    }
+    #next-btn, #random-btn {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<header>Spicy Couples Question Game</header>
+<main>
+  <div class="category-buttons">
+    <button class="category-btn" data-category="juicy">Juicy</button>
+    <button class="category-btn" data-category="intimate">Intimate</button>
+    <button class="category-btn" data-category="spicy">Spicy</button>
+    <button class="category-btn" data-category="naughty">Naughty</button>
+    <button class="category-btn" data-category="dirty">Dirty</button>
+  </div>
+  <div id="question-box">Select a category to get started!</div>
+  <div class="buttons-row">
+    <button id="next-btn" disabled>Next Question</button>
+    <button id="random-btn">Random Question</button>
+  </div>
+</main>
+<footer>
+  Developed by Your Spicy Question Bot
+</footer>
+
+<script>
+  const questions = {
+    juicy: [
+      "What’s the most adventurous place you’ve ever wanted to make love?",
+      "Have you ever had a secret crush on someone else while we were together?",
+      "What’s one fantasy you’ve never told me about?",
+      "Have you ever been tempted to cheat, even if you didn’t?",
+      "What’s the most romantic thing someone’s done for you before?",
+      "If you had to pick one part of my body to stare at all day, what would it be?",
+      "What’s a pet name you’ve always wanted me to call you?",
+      "What’s the wildest thing you’ve done in public?",
+      "Have you ever had a dream about me that made you blush?",
+      "What’s one thing that instantly turns you on when you see me?",
+      "What’s the craziest place you’d want to get caught making out?",
+      "Have you ever thought about how many people I’ve been with before you?",
+      "What’s a secret desire you’ve been too shy to share?",
+      "What’s the sexiest outfit you’ve ever worn for me or wanted to wear?",
+      "If you could erase one memory of us and relive it, which would it be?",
+      "What’s the most spontaneous thing you’d want to try with me?",
+      "Have you ever fake texted someone to get out of plans for just us time?",
+      "What’s a compliment you secretly want to hear from me more often?",
+      "What’s a phrase or word I say that drives you crazy in a good way?",
+      "What’s the most unforgettable kiss we’ve shared?"
+    ],
+    intimate: [
+      "What’s your favorite way to be comforted after a bad day?",
+      "How do you feel about sharing your deepest fears with me?",
+      "What’s one part of your body you love having touched the most?",
+      "What’s a moment when you felt most connected to me emotionally?",
+      "How do you like to be kissed when you want to feel close but not rushed?",
+      "What’s something I do that makes you feel completely safe?",
+      "What’s a romantic gesture that means more to you than grand gifts?",
+      "How do you like to be cuddled after we’re intimate?",
+      "What’s one thing you think we could do to deepen our intimacy?",
+      "What’s a secret you’ve wanted to tell me but felt nervous about?",
+      "How do you feel about slow, sensual massages as foreplay?",
+      "What’s the most vulnerable you’ve ever felt with me?",
+      "What’s a quality in me that makes you trust me instantly?",
+      "What’s something small I do daily that makes you feel loved?",
+      "How do you like to be reassured when you’re feeling insecure?",
+      "What’s a dream you have for us as a couple in the next year?",
+      "What’s your favorite way to wake up next to me?",
+      "How do you imagine our ideal romantic getaway?",
+      "What’s a song that always reminds you of me or us?",
+      "What’s one way I can show you love that you might not expect?"
+    ],
+    spicy: [
+      "What’s your favorite type of kiss to start things off?",
+      "Have you ever wanted to role-play? If yes, what scenario?",
+      "What’s one thing you wish I’d initiate more often in the bedroom?",
+      "What’s your favorite part of my body to undress first?",
+      "Have you ever wanted to try toys or props while we’re together?",
+      "What’s the naughtiest thing you’ve ever done with me?",
+      "How do you feel about whispering dirty things in public?",
+      "What’s a secret move or touch that always gets you going?",
+      "What’s your favorite time of day for intimacy and why?",
+      "Would you ever want to try blindfolds or restraints?",
+      "What’s the hottest compliment I could say during sex?",
+      "Have you ever fantasized about watching me with someone else?",
+      "What’s a new position or technique you want to try together?",
+      "What’s your favorite way to tease me without touching?",
+      "How do you feel about using food or drinks in our play?",
+      "Have you ever been turned on by something unexpected?",
+      "What’s your favorite place on my body to be kissed slowly?",
+      "How do you like to be touched to build anticipation?",
+      "What’s your idea of the perfect sexy outfit for me?",
+      "Would you ever want to try a quickie in a risky place?"
+    ],
+    naughty: [
+      "What’s one naughty thought you had about me today?",
+      "Have you ever wanted to surprise me with something sexy?",
+      "What’s your favorite way to catch me off guard in a good way?",
+      "Have you ever imagined us in a scandalous situation?",
+      "What’s the most inappropriate place you’ve wanted to make love?",
+      "What’s a secret fantasy involving costumes or uniforms?",
+      "Have you ever wanted to send me a flirty text during work?",
+      "What’s one naughty thing you want me to do when I get home?",
+      "How do you feel about public displays of affection that border on risky?",
+      "What’s a seductive nickname you’d want to call me?",
+      "Have you ever wanted to play a sexy game together?",
+      "What’s the naughtiest thing you’ve thought about doing with me in the car?",
+      "What’s your favorite way to initiate when you want me badly?",
+      "Have you ever imagined us in a steamy movie scene?",
+      "What’s one naughty secret you’ve kept just for yourself?",
+      "How do you feel about teasing text messages throughout the day?",
+      "What’s your favorite way to be teased until you can’t take it anymore?",
+      "Have you ever wanted to experiment with temperature play?",
+      "What’s a sexy surprise you’d want to plan for me?",
+      "What’s one thing you want to do that we haven’t tried yet?"
+    ],
+    dirty: [
+      "What’s your dirtiest thought about me right now?",
+      "Have you ever wanted to talk dirty but didn’t know what to say?",
+      "What’s the most explicit fantasy you’ve had with me?",
+      "What’s your favorite dirty word to hear during sex?",
+      "Have you ever wanted to record a private video or audio for me?",
+      "What’s the sexiest thing you’d do if no one could ever find out?",
+      "How do you feel about dirty talk over the phone or video?",
+      "What’s one dirty secret you’ve been dying to confess?",
+      "What’s the wildest place you want to have sex but haven’t yet?",
+      "How do you feel about trying anal or other taboo activities?",
+      "What’s your favorite way to be dominated or take control?",
+      "Have you ever wanted to roleplay a taboo scenario?",
+      "What’s the dirtiest thing you’ve ever whispered in my ear?",
+      "What’s a kink or fetish you’re curious to explore with me?",
+      "How do you feel about group play or watching others?",
+      "What’s the most taboo thing you’d want to try just once?",
+      "Have you ever wanted to use restraints or spanking?",
+      "What’s one dirty thought that makes you smile secretly?",
+      "How do you feel about incorporating toys or props in a wild way?",
+      "What’s your ultimate dirty fantasy that you want to make real?"
+    ]
+  };
+
+  let currentCategory = null;
+  let usedIndexes = {};
+
+  // Initialize usedIndexes for each category
+  Object.keys(questions).forEach(cat => {
+    usedIndexes[cat] = [];
+  });
+
+  const categoryButtons = document.querySelectorAll('.category-btn');
+  const questionBox = document.getElementById('question-box');
+  const nextBtn = document.getElementById('next-btn');
+  const randomBtn = document.getElementById('random-btn');
+
+  function getRandomQuestion(category) {
+    if (!questions[category]) return null;
+    if (usedIndexes[category].length === questions[category].length) {
+      // Reset used questions when all have been shown
+      usedIndexes[category] = [];
+      alert(`You've gone through all questions in the "${category.charAt(0).toUpperCase() + category.slice(1)}" category. Starting over!`);
+    }
+    let index;
+    do {
+      index = Math.floor(Math.random() * questions[category].length);
+    } while (usedIndexes[category].includes(index));
+    usedIndexes[category].push(index);
+    return questions[category][index];
+  }
+
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      currentCategory = button.getAttribute('data-category');
+      nextBtn.disabled = false;
+      const question = getRandomQuestion(currentCategory);
+      questionBox.textContent = question || "No questions available.";
+    });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (!currentCategory) return;
+    const question = getRandomQuestion(currentCategory);
+    questionBox.textContent = question || "No questions available.";
+  });
+
+  randomBtn.addEventListener('click', () => {
+    // Remove active highlight from category buttons
+    categoryButtons.forEach(btn => btn.classList.remove('active'));
+    currentCategory = null;
+    nextBtn.disabled = false;
+
+    const categories = Object.keys(questions);
+    // Pick a random category
+    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    const question = getRandomQuestion(randomCategory);
+    questionBox.textContent = question || "No questions available.";
+  });
+</script>
+</body>
+</html>
